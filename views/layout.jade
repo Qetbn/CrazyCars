@@ -1,0 +1,15 @@
+!!!
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/#{stylesheet}.css')
+    script(type='text/javascript', src='/javascripts/easeljs.js')
+    script(type='text/javascript', src='/javascripts/box2dweb.js')
+    script(type='text/javascript', src='/javascripts/underscore.js')
+    script(type='text/javascript', src='/javascripts/backbone.js')
+    script(type='text/javascript', src='/socket.io/socket.io.js')
+    script(type='text/javascript', src='/javascripts/jquery.js')
+    script(type='text/javascript', src='/javascripts/play.js')
+  body
+    != body

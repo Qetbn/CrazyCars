@@ -1,0 +1,17 @@
+{
+  "name": "crazy-cars",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "2.5.8",
+    "stylus": ">= 0.0.1",
+    "jade": ">= 0.0.1",
+    "underscore": "~1.3.3",
+    "logule": "~0.9.1",
+    "mongoose": "~3.1.2",
+    "connect-mongodb": "~1.1.5",
+    "coffee-script": "~1.3.3",
+    "connect-assets": "~2.3.3",
+    "socket.io": "~0.9.10"
+  }
+}

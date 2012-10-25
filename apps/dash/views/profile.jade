@@ -1,0 +1,62 @@
+form(method='post', action='', class='form-horizontal') 
+  table(class='table condensed-table bordered-table')
+    tr
+      td Имя
+      td
+        input(name='profile[name]', value=profile.name || '')
+    tr
+      td Пол:
+      td
+        select(name='profile[sex]')
+          option(value='m')
+            Муж
+          option(value='g')
+            Жен
+    tr
+      td Дата рождения (дд.мм.гггг):
+      td
+        input(name='profile[bdate]', value=profile.bdate || '')
+    tr
+      td Город:
+      td
+        input(name='profile[city]', value=profile.city || '')
+    tr
+      td Дети (мальчики):
+      td
+        input(name='profile[children_man]', value=profile.children_man || '')
+    tr
+      td Дети (девочки):
+      td
+        input(name='profile[children_girl]', value=profile.children_girl || '')
+    tr
+      td(colspan=2) Ищу:
+    tr
+      td Женщину
+      td
+        input(type='checkbox', name='profile[looking_for_man]')
+    tr
+      td Мужчину 
+      td
+        input(type='checkbox', name='profile[looking_for_woman]')
+    tr
+      td(colspan=2) В возрасте:
+    tr
+      td От:
+      td
+        input(name='profile[looking_age_min]', value=profile.looking_age_min || '')
+    tr
+      td До:
+      td
+        input(name='profile[looking_age_max]', value=profile.looking_age_max || '')
+    tr
+      td Из города:
+      td
+        input(name='profile[looking_city]', value=profile.looking_from || '')
+    tr
+      td О себе:
+      td
+        textarea(name='profile[about]')
+          =profile.about || ''
+    tr
+      td(colspan=2)
+        input(type='submit', value='Сохранить', class='btn')      

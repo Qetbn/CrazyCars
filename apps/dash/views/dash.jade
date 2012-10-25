@@ -1,0 +1,20 @@
+.navbar
+  .navbar-inner
+    .container 
+      a.brand(href="#") Crazy Cars
+      ul.nav
+          li
+              a(href='#') Счёт 
+                  span(class="label badge-success") 0              
+
+      .btn-group
+          a(class="btn btn-primary dropdown-toggle", data-toggle="dropdown", href="#")=vk_profile.first_name
+              span 
+              span.caret
+          ul.dropdown-menu
+
+#race-holder
+  canvas(width='500',height='400', id='race')
+        
+
+
